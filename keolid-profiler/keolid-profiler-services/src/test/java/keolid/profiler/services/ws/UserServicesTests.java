@@ -72,7 +72,7 @@ public class UserServicesTests {
 		 try {
 			mockMvc.perform(get(HOST_PORT+"/user/hello"))
 			            .andExpect(status().isOk())
-			            .andExpect(content().contentType(textContentType));
+			            .andExpect(content().contentType(jsonContentType));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
